@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "numen_effects"
+version = "1.0.0"
+displayName = "Numen Effects Sense"
+description = "状态效果：她身上现在有哪些药水效果、各剩多久、哪几个是坏的；也能单独问「有没有某个效果」「某个还剩多久」。中毒、凋零、失明、饥饿、着火会写进身体状态那一行。只读，只看她自己，不会替她喝药或清除效果。"
+displayTest = "IGNORE_SERVER_VERSION"
+
+[[dependencies.numen_effects]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.numen_effects]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.numen_effects]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"

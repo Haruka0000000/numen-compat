@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_stats"
+version = "1.0.0"
+displayName = "Numen Stats Sense"
+description = "Lets a numen companion read the live attribute map of her own body and of an online player: health, armor, attack damage, movement speed and every other attribute. Read only."
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_stats]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_stats]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_stats]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "dev.local.numenpingwheel.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ServerCoreMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

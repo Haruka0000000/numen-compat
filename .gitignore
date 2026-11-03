@@ -1,0 +1,18 @@
+# 构建产物
+build/
+*.class
+*.jar
+*.pyc
+__pycache__/
+
+# 运行环境与第三方二进制（不进仓库）
+/Server/
+/Client/
+/源码/
+/反编译/
+*.orig
+*.log
+
+# 本地密钥
+.rconpass
+.env

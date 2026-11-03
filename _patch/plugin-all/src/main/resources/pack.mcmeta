@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "numen_compat: every numen compatibility plugin in one jar"
+  }
+}

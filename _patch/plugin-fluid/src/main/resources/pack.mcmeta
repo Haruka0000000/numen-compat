@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "numen_fluid: tank contents readout, read only"
+  }
+}

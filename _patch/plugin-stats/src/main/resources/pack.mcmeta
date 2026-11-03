@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "numen_stats: live attribute readout, read only"
+  }
+}

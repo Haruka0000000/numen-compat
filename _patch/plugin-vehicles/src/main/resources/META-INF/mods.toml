@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_vehicles"
+version = "1.0.0"
+displayName = "Numen Vehicles Sense"
+description = "Lets a numen companion see the cars and planes standing around her in Immersive Vehicles (MTS) and get in and out of one: how many, where, how fast, who is aboard. Reads the vehicle hierarchy through reflection, so no vehicles mod is compiled against. She cannot drive."
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_vehicles]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_vehicles]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_vehicles]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.numen_vehicles]]
+modId = "mts"
+mandatory = false
+versionRange = "[25.0.0,)"
+ordering = "NONE"
+side = "BOTH"

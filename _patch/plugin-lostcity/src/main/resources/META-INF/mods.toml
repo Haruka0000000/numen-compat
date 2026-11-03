@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="numen_lostcity"
+version="1.0.0"
+displayName="Numen Lost Cities"
+description='''失落的城市兼容（言出法随插件）：二十个函数，分八组。
+building.here / building.at：脚下（或指定坐标）是什么楼、每层多高、几层地下室、从第几层开始塌（层号 + 绝对 Y）。
+find.buildings / find.types：最近的医院、军营、警局、仓库、加油站；以及这个整合包注册了哪些楼型。
+loot.containers / loot.plan / loot.preview：周围的箱子、容器、机器、刷怪笼，按方块实体与物品能力找，不用记方块 id；plan 给一条可执行的搜刮路线。只算已加载区块，chunks = 0 会明说「一个区块都没加载」。
+stairs.nearest：最近的楼梯 / 梯子 / 脚手架（距离按三维算，不只看水平）。
+reach.plan / reach.ok：这个容器开得了吗、该站哪一面；开成功一次按方块类型记住那一面。
+multi.list / multi.size：跨区块大建筑横竖各跨几个区块。
+blueprint.save / get / list：把楼记成蓝图，同一类型的下一栋直接按坐标走；坐标按这栋楼自己的原点（不是她站的区块角），所以跨楼可用。
+learn.lesson / lessons / skill / list / about：她自己的经验库与技能页；技能优先写进客户端那份 config/numen/skills。
+物品、方块、生物名字走共享中文表（mods/*.jar 里的 zh_cn.json 会被读进来）。'''
+displayTest="IGNORE_SERVER_VERSION"
+
+[[dependencies.numen_lostcity]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.numen_lostcity]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.numen_lostcity]]
+modId="numen"
+mandatory=false
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.numen_lostcity]]
+modId="lostcities"
+mandatory=false
+versionRange="*"
+ordering="NONE"
+side="BOTH"

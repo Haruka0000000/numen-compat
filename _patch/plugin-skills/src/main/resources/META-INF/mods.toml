@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_skills"
+version = "1.0.0"
+displayName = "Numen Skills Sense"
+description = "技能树兼容：让 numen 同伴读技能树（Pufferfish Skills），把这具身体的等级、这一级攒了多少经验、还差多少升级、还剩多少点没花、点开了几个技能报出来。只读——不发点、不点技能、不开界面；读的是这具身体自己的存档，主人练的东西她看不到。"
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_skills]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_skills]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_skills]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.numen_skills]]
+modId = "puffish_skills"
+mandatory = false
+versionRange = "[0.19,)"
+ordering = "AFTER"
+side = "BOTH"

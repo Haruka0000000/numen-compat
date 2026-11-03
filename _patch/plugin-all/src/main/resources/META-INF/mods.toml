@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+issueTrackerURL = "https://example.invalid/numen-compat"
+
+[[mods]]
+modId = "numen_compat"
+version = "1.0.0"
+displayName = "Numen Compat Pack"
+description = '''Every numen compatibility plugin in one jar: items, power, schematic, vehicles, rs, sb, fluid, tacz, lso, stats, effects, skills, threat, hordes, lostcity, i18n, parcool, corpse, cooking, pingwheel. Each one registers its own Lua group only when the mod it speaks for is installed, and a plugin whose mod is missing stays inert instead of failing the pack.'''
+displayTest = "IGNORE_SERVER_VERSION"
+
+[[mixins]]
+config = "numen_pingwheel.mixins.json"
+
+[[dependencies.numen_compat]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.numen_compat]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.numen_compat]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_schematic"
+version = "1.0.0"
+displayName = "Numen Engineers Blueprint Sense"
+description = "Lets a numen companion read the Engineer's blueprint (Engineered Schematics) she is carrying: which Immersive Engineering multiblock it describes, the anchor and rotation it was placed with, and - cell by cell against the real world - what is still missing, what is standing in the wrong place, which block to place next and where to stand while building. Read only; all placement still goes through numen.use.block."
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_schematic]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_schematic]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_schematic]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.numen_schematic]]
+modId = "immersiveengineering"
+mandatory = false
+versionRange = "[1.20.1,1.21)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies.numen_schematic]]
+modId = "engineered_schematics"
+mandatory = false
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "BOTH"

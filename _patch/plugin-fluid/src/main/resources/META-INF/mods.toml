@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_fluid"
+version = "1.0.0"
+displayName = "Numen Fluid Sense"
+description = "Lets a numen companion read the tanks around her: which liquid, how much, how full. Reads the FLUID_HANDLER capability, so Create, Immersive Engineering and any other capability-speaking tank answer alike. Read only."
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_fluid]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_fluid]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_fluid]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"

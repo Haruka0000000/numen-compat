@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_items"
+version = "1.0.0"
+displayName = "Numen Items Sense"
+description = "Lets a numen companion read what is actually in a hand: item id, display name, enchantments, durability and the custom data keys a mod put on it. Read only."
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_items]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_items]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_items]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"

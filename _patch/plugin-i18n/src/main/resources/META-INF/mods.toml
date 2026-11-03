@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+[[mods]]
+modId = "numen_i18n"
+version = "1.0.0"
+displayName = "Numen 中文名总表"
+description = "全整合包的中文名总表：原版名字随 jar 打包，模组名字从 mods 里每个 jar 的 zh_cn.json 扫描，再读 config/numen/lang/ 目录里的本地语言包（客户端资源包里的那些 zh_cn.json 复制进来就行），最后叠一份 config/numen/i18n_zh_cn.json 手写覆盖。别的兼容插件不再各带一份 183KB 的表，而是反射问这里要名字。对外三个函数：问一个 id 的中文名、找出还没中文名的东西、改完覆盖文件后重读。只读。"
+displayTest = "IGNORE_SERVER_VERSION"
+[[dependencies.numen_i18n]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_i18n]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.numen_i18n]]
+modId = "numen"
+mandatory = false
+versionRange = "[0.1.4,)"
+ordering = "AFTER"
+side = "BOTH"
